@@ -1,0 +1,18 @@
+#logo1_header {
+    height: 7rem;
+    padding-right: 2rem;
+    padding-left: 1rem;
+}
+.navbar-collapse {
+    align-self: flex-end;
+   }
+
+#navList {
+    font-size: 30px;
+}
+
+#contactUs {
+    border: 1px solid;
+    padding: 10px;
+    box-shadow: 3px 7px #888888;
+}

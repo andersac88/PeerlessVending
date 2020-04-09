@@ -1,0 +1,10 @@
+#repeatContainer {
+    height:  300px;
+    margin-top: 7em;
+    margin-bottom: 7em;
+    background-image: linear-gradient(to left, rgba(0,0,0,.8), rgba(76,10,13,1));
+}
+
+#repeatDiv {
+    text-align: center;
+}

@@ -1,0 +1,9 @@
+#carousel {
+    height:  300px;
+    margin-top: 7em;
+    margin-bottom: 7em;
+    background-image: linear-gradient(to left, rgba(76,10,13,.75), rgba(76,10,13,1));
+    color: white;
+    text-align: center;
+    
+}
