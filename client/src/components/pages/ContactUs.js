@@ -28,8 +28,9 @@ state = {
 
 render() {
  return(
-   <div className="App">
-   <form >
+   <div className="Row">
+     <div className="col-sm-6">
+   <form > <h1>Contact Us</h1>
      <Input 
                name="name" 
                placeholder="Name" 
@@ -52,6 +53,8 @@ render() {
                 Submit
               </FormButton>
     </form>
+    </div>
+    <div className="col-sm"></div> 
     </div>
  );
 }

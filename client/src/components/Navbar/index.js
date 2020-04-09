@@ -5,7 +5,7 @@ import "./style.css";
 
 function NavBar() {
   return (
-    <nav className="navbar shadow-lg navbar-expand-lg navbar-light bg-white">
+    <nav className="navbar navbar-expand-lg navbar-light bg-white">
       <Link
         to="/"
         className={

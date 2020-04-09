@@ -18,6 +18,6 @@ export function TextArea(props) {
 
 export function FormButton(props) {
     return (
-        <button script={console.log(props.children)} {...props} className="btn btn-primary">{props.children} </button>
+        <button {...props} style={{margin: 9}} className="btn btn-primary">{props.children} </button>
     )
 }
