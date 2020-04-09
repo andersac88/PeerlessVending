@@ -24,7 +24,10 @@ let mailOptions = {
 transport.sendMail(mailOptions, (error, info) => {
   if (error) {
     return console.log(error);
+  } else {
+    res.json(info)
   }
+
 });
 });
 

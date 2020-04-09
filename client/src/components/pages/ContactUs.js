@@ -17,10 +17,11 @@ state = {
   
   handleFormSubmit = async(event) => {
     event.preventDefault();
-    await axios.post("/api/contact", this.state)
-    .then(
+    axios.post("/api/contact", this.state)
+    .then(res =>{
+      console.log(res);
       this.setState({ name: '', email: '', message: ''})
-    );
+    });
   }
 
 render() {
