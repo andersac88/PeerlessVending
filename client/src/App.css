@@ -1,5 +1,6 @@
-body {
-  background-image: url("./images/snacks.jpg");
+html body {
+  background-image: url("./images/redMachine.jpg");
+  background-color: white;
   background-size: 100%;
   background-repeat: no-repeat;
   background-attachment: fixed;

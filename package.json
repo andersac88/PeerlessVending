@@ -1,7 +1,7 @@
 {
-  "name": "mern",
+  "name": "Peerless",
   "version": "1.0.0",
-  "description": "Mern Demo",
+  "description": "Peerless3.0",
   "proxy": "http://localhost:3001/",
   "main": "server.js",
   "scripts": {

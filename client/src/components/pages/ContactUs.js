@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import axios from "axios";
+import {Input, TextArea, FormButton} from "../Form"
 
 class App extends Component {
 state = {
@@ -17,36 +18,43 @@ state = {
   
   handleFormSubmit = async(event) => {
     event.preventDefault();
+    console.log(this.state)
     axios.post("/api/contact", this.state)
     .then(res =>{
-      console.log(res);
+      console.log(res)
       this.setState({ name: '', email: '', message: ''})
-    });
+    }).catch(err => console.log(err));
   }
 
 render() {
  return(
    <div className="App">
-   <form id="contact-form" >
-    <div className="form-group">
-        <label htmlFor="name">Name</label>
-        <input name="name" type="text" value={this.state.name} onChange={this.handleInputChange} />
-    </div>
-    <div className="form-group">
-        <label htmlFor="exampleInputEmail1">Email address</label>
-        <input name="email" type="text" className="form-control" aria-describedby="emailHelp" value={this.state.email} onChange={this.handleInputChange} />
-    </div>
-    <div className="form-group">
-        <label htmlFor="message">Message</label>
-        <input name="message" type="text" className="form-control" rows="5" value={this.state.message} onChange={this.handleInputChange} />
-    </div>
-    <button onClick={this.handleFormSubmit} type="submit" className="btn btn-primary">Submit</button>
+   <form >
+     <Input 
+               name="name" 
+               placeholder="Name" 
+               value={this.state.name} 
+               onChange={this.handleInputChange}/>
+     <Input 
+                name="email" 
+                placeholder="E-mail" 
+                value={this.state.email} 
+                onChange={this.handleInputChange}/>
+     <TextArea 
+                name="message" 
+                placeholder="Type message here..." 
+                value={this.state.message} 
+                onChange={this.handleInputChange}/>
+     <FormButton
+                disabled={!(this.state.name && this.state.email && this.state.message)}
+                onClick={this.handleFormSubmit}
+              >
+                Submit
+              </FormButton>
     </form>
     </div>
  );
 }
-
-
 }
 
 export default App;
