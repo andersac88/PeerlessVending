@@ -12,22 +12,20 @@ let transport = nodemailer.createTransport( {
   });
 
 router.post("/contact", (req, res) => {
-console.log(req.body.name)
 //Nodemailer
 let mailOptions = {
   from: req.body.email,
   to: 'peerlessvendingco@gmail.com',
   subject: req.body.name,
-  text: req.body.message
+  text: "From:" + req.body.name + " Content :" + req.body.message,
+  html: "<h1>From: " + req.body.name + "</h1><br><h2>Content: " + req.body.message 
 };
 
 transport.sendMail(mailOptions, (error, info) => {
   if (error) {
     return console.log(error);
   }
-  console.log('Message sent: %s', info.messageId);
 });
-
 });
 
 module.exports = router;

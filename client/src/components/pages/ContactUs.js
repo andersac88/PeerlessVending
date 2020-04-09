@@ -15,18 +15,13 @@ state = {
     })
   };
   
-  handleFormSubmit = (event) => {
-    console.log(event);
+  handleFormSubmit = async(event) => {
     event.preventDefault();
-    console.log(this.state)
-    this.emailFront(this.state);
+    await axios.post("/api/contact", this.state)
+    .then(
+      this.setState({ name: '', email: '', message: ''})
+    );
   }
-  
-emailFront = (info) => {
-  console.log(info)
-  axios.post("/api/contact", info)
-  .then(res => console.log(res));
-}
 
 render() {
  return(
@@ -34,7 +29,7 @@ render() {
    <form id="contact-form" >
     <div className="form-group">
         <label htmlFor="name">Name</label>
-        <input name="name" type="text" className="form-control" value={this.state.name} onChange={this.handleInputChange} />
+        <input name="name" type="text" value={this.state.name} onChange={this.handleInputChange} />
     </div>
     <div className="form-group">
         <label htmlFor="exampleInputEmail1">Email address</label>
