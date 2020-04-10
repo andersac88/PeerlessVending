@@ -1,17 +1,17 @@
 import React from "react";
 import "./style.css";
+import {Container, Col, Row} from "react-bootstrap";
 
-function Container(props) {
+function Containers(props) {
   return (
-        <div id="repeatContainer" className="row">
-            <div className="col">
-                <div id="repeatDiv">{props.side1}</div> 
-            </div>
-            <div className="col">
-            <div id="repeatDiv">{props.side2}</div>
-            </div>
-    </div>
+    <Container fluid id="repeatContainer">
+      <Row id="repeattRow">
+        <Col sm={6} id="repeatDiv">{props.side1}</Col>
+        <Col sm={6} id="repeatDiv">{props.side2}</Col>
+      </Row>
+    </Container>
+
   );
 }
 
-export default Container;
+export default Containers;
