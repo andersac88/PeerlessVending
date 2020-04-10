@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import axios from "axios";
-import {Input, TextArea, FormButton} from "../Form"
+import {Input, TextArea, FormButton} from "../components/Form"
 
 class App extends Component {
 state = {

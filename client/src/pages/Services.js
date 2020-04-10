@@ -1,6 +1,6 @@
 import React from 'react';
-import Container from "../Container/"
-import Testimonials from "../Testimonials/"
+import Container from "../components/Container"
+import Testimonials from "../components/Testimonials"
 
 function Services() {
   return (

@@ -5,7 +5,7 @@ function Container(props) {
   return (
         <div id="repeatContainer" className="row">
             <div className="col">
-                <div id="repeatDiv">{props.side1}</div>
+                <div id="repeatDiv">{props.side1}</div> 
             </div>
             <div className="col">
             <div id="repeatDiv">{props.side2}</div>
