@@ -1,4 +1,5 @@
 import React from "react";
+import {Button} from "react-bootstrap"
 
 export function Input(props) {
     return (
@@ -18,6 +19,6 @@ export function TextArea(props) {
 
 export function FormButton(props) {
     return (
-        <button {...props} style={{margin: 9}} className="btn btn-primary">{props.children} </button>
+        <Button variant="danger" {...props} style={{margin: 9}} >{props.children} </Button>
     )
 }
