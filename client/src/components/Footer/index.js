@@ -9,9 +9,14 @@ function Footer() {
         <div className="row top">A percentage of all proceeds is donated to <a href="https://www.thenccs.org/">The National Children's Cancer Society</a>
       </div>
      
-      <div className="row">        &#9400;Copyright 2019 by Peerless Vending | web design by Andrew Inc.</div>
+      <div className="row"> &#9400;Copyright 2019 by Peerless Vending | web design by Andrew Inc.</div>
       </div>
-      <div className="col-sm social">Connect with Us: <a href="#" ><i className="fab fa-facebook-square"></i></a></div>
+      <div className="col-sm social">Connect with Us: 
+      {'\u00A0'}
+        <a href="#" ><i className="fab fa-facebook-square"></i></a>
+      {'\u00A0'}
+        <a href="#" ><i className="fab fa-instagram-square"></i></a>
+      </div>
     </div>
     </div>
   );
