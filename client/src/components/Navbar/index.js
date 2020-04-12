@@ -5,7 +5,7 @@ import "./style.css";
 
 function NavBar() {
   return (
-<Navbar bg="light" expand="lg">
+<Navbar bg="white" sticky="top" expand="lg">
   <Navbar.Brand href="/"><img alt="Peerless Logo" src={logo1} width="40%"/></Navbar.Brand>
   <Navbar.Toggle aria-controls="basic-navbar-nav" />
   <Navbar.Collapse id="basic-navbar-nav">
