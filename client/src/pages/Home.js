@@ -5,8 +5,8 @@ import Testimonials from "../components/Testimonials"
 function Home() {
   return (
   <>
- <Container side2="Providing and Servicing vending machines around the Chicagoland area." />
-  <Container side1="Being family owned and operated, Peerless Vending offers the service and flexibility that large companies cannot match" />
+ <Container side2="Being family owned and operated, Peerless Vending offers the service and flexibility that large companies cannot match" />
+  <Container side1="Providing and Servicing vending machines around the Chicagoland area." />
   <Testimonials />
   </>
   )
