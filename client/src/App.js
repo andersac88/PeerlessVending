@@ -5,7 +5,6 @@ import NavBar from "./components/Navbar/"
 import Footer from "./components/Footer/"
 import Home from "./pages/Home";
 import Services from "./pages/Services";
-import ContactUs from "./pages/ContactUs";
 import axios from "axios";
 
 class App extends Component {
@@ -22,11 +21,10 @@ class App extends Component {
       })
     };
     
-    handleFormSubmit = async() => {
-      console.log(this.state)
+    handleFormSubmit = async(event) => {
+      event.preventDefault();
       axios.post("/api/contact", this.state)
       .then(res =>{
-        console.log(res)
         this.setState({ name: '', email: '', message: ''})
       }).catch(err => console.log(err));
     }
@@ -38,7 +36,6 @@ class App extends Component {
         <NavBar contactname={this.state.name} email={this.state.email} message={this.state.message} inputChange={this.handleInputChange} formSubmit={this.handleFormSubmit} />
         <Route exact path="/" component={Home} />
         <Route exact path="/Services" component={Services} />
-        <Route exact path="/ContactUs" component={ContactUs} />
         <Footer />
       </div>
     </Router>

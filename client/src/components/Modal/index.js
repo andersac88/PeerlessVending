@@ -38,7 +38,7 @@ function MyVerticallyCenteredModal(props) {
         <Modal.Footer>     
             <FormButton
                 disabled={!(props.contactname && props.email && props.message)}
-                onClick={() => {props.onHide(); props.formSubmit()}}
+                onClick={(event) => {props.onHide(); props.formSubmit(event)}}
               >
                 Submit
               </FormButton>

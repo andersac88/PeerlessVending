@@ -12,7 +12,6 @@ let transport = nodemailer.createTransport( {
   });
 
 router.post("/contact", (req, res) => {
-  console.log("hello")
 //Nodemailer
 let mailOptions = {
   from: req.body.email,
