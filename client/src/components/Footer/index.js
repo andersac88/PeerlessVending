@@ -11,6 +11,7 @@ function Footer() {
      
       <div className="row" id="copy"> &#9400;Copyright 2020 by Peerless Vending | web design by {'\u00A0'}<a  style={{color: "inherit"}} href="https://wwww.AndrewCAndersen.com">AA</a></div>
       </div>
+      <div className="col-sm-3"></div>
       <div className="col-sm my-auto text-right">Connect with Us</div>
       <div className="col-sm my-auto">
         <a className="fab" href="https://www.facebook.com/PeerlessVending/" ><i className="fab fa-facebook-square"></i></a>
