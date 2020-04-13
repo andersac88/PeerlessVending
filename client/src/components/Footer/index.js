@@ -9,7 +9,7 @@ function Footer() {
         <div className="row top">A percentage of all proceeds is donated to{'\u00A0'}<a href="https://www.thenccs.org/">The National Children's Cancer Society</a>
       </div>
      
-      <div className="row"> &#9400;Copyright 2020 by Peerless Vending | web design by Andrew Inc.</div>
+      <div className="row"> &#9400;Copyright 2020 by Peerless Vending | web design by AA</div>
       </div>
       <div className="col-sm my-auto text-right">Connect with Us</div>
       <div className="col-sm my-auto">
