@@ -1,5 +1,6 @@
 import React from "react"
-import {Modal, Button} from "react-bootstrap"
+import {Modal} from "react-bootstrap"
+import {Input, TextArea, FormButton} from "../Form"
 
 function MyVerticallyCenteredModal(props) {
     return (
@@ -11,19 +12,37 @@ function MyVerticallyCenteredModal(props) {
       >
         <Modal.Header closeButton>
           <Modal.Title id="contained-modal-title-vcenter">
-            Modal heading
+            Contact Us
           </Modal.Title>
         </Modal.Header>
         <Modal.Body>
-          <h4>Centered Modal</h4>
-          <p>
-            Cras mattis consectetur purus sit amet fermentum. Cras justo odio,
-            dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac
-            consectetur ac, vestibulum at eros.
-          </p>
+        <form >
+     <Input 
+               name="name" 
+               placeholder="Name" 
+               value={props.contactname} 
+               onChange={props.inputChange}/>
+     <Input 
+                name="email" 
+                placeholder="E-mail" 
+                value={props.email} 
+                onChange={props.inputChange}/>
+     <TextArea 
+                name="message" 
+                placeholder="Type message here..." 
+                value={props.message} 
+                onChange={props.inputChange}/>
+
+    </form>
         </Modal.Body>
-        <Modal.Footer>
-          <Button onClick={props.onHide}>Close</Button>
+        <Modal.Footer>     
+            <FormButton
+                disabled={!(props.contactname && props.email && props.message)}
+                onClick={() => {props.onHide(); props.formSubmit()}}
+              >
+                Submit
+              </FormButton>
+            
         </Modal.Footer>
       </Modal>
     );

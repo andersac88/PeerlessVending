@@ -4,9 +4,10 @@ import logo1 from "../../images/LOGO1.png";
 import MyVerticallyCenteredModal from "../Modal";
 import "./style.css";
 
-function NavBar() {
+function NavBar(props) {
   const [modalShow, setModalShow] = React.useState(false);
 
+  
 
 
   return (
@@ -23,6 +24,7 @@ function NavBar() {
   </Navbar.Collapse>
 </Navbar>
       <MyVerticallyCenteredModal
+      {...props}
       show={modalShow}
       onHide={() => setModalShow(false)}
     />

@@ -18,6 +18,7 @@ state = {
   
   handleFormSubmit = async(event) => {
     event.preventDefault();
+    console.log(event);
     console.log(this.state)
     axios.post("/api/contact", this.state)
     .then(res =>{
