@@ -12,3 +12,8 @@
     font-size: 30px;
     margin-right: 1em;
 }
+
+.text-nowrap {
+    border-radius: 0;
+    font-size: 30px;
+}
