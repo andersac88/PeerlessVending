@@ -6,16 +6,16 @@ function Footer() {
     <div id="footer" className="card-footer text-muted">
     <div className="row">
       <div className="col-sm-8">
-        <div className="row top">A percentage of all proceeds is donated to <a href="https://www.thenccs.org/">The National Children's Cancer Society</a>
+        <div className="row top">A percentage of all proceeds is donated to{'\u00A0'}<a href="https://www.thenccs.org/">The National Children's Cancer Society</a>
       </div>
      
-      <div className="row"> &#9400;Copyright 2019 by Peerless Vending | web design by Andrew Inc.</div>
+      <div className="row"> &#9400;Copyright 2020 by Peerless Vending | web design by Andrew Inc.</div>
       </div>
-      <div className="col-sm social">Connect with Us: 
+      <div className="col-sm my-auto text-right">Connect with Us</div>
+      <div className="col-sm my-auto">
+        <a className="fab" href="https://www.facebook.com/PeerlessVending/" ><i className="fab fa-facebook-square"></i></a>
       {'\u00A0'}
-        <a href="#" ><i className="fab fa-facebook-square"></i></a>
-      {'\u00A0'}
-        <a href="#" ><i className="fab fa-instagram-square"></i></a>
+        <a className="fab" href="https://www.instagram.com/peerlessvending/"><i className="fab fa-instagram-square"></i></a>
       </div>
     </div>
     </div>
