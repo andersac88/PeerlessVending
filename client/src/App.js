@@ -5,7 +5,7 @@ import NavBar from "./components/Navbar/"
 import Footer from "./components/Footer/"
 import Home from "./pages/Home";
 import Services from "./pages/Services";
-import axios from "axios";
+import axios from "axios"
 
 class App extends Component {
   state = {
