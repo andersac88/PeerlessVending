@@ -13,12 +13,11 @@ function NavBar(props) {
   return (
     <>
 <Navbar bg="white" sticky="top" expand="lg">
-  <Navbar.Brand href="/"><img alt="Peerless Logo" src={logo1} width="40%"/></Navbar.Brand>
+  <Navbar.Brand href="/"><img alt="Peerless Logo" src={logo1} width="40%"/>     <span className="mx-4" id="slogan">Family owned vending company servicing the Chicagoland area</span></Navbar.Brand>
   <Navbar.Toggle aria-controls="basic-navbar-nav" />
   <Navbar.Collapse id="basic-navbar-nav">
     <Nav className="mr-auto">
-      <Nav.Link href="/">Home</Nav.Link>
-      <Nav.Link href="/services">Services</Nav.Link>
+   
       <Button className="text-nowrap" onClick={() => setModalShow(true)} size="lg" variant="danger">Contact Us</Button>
     </Nav>
   </Navbar.Collapse>

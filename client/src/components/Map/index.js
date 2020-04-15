@@ -1,38 +1,42 @@
 import React, { Component } from 'react';
 import GoogleMapReact from 'google-map-react';
 
- 
-console.log("hello")
-let key = process.env.REACT_APP_GOOGLE_MAPS_KEY;
-console.log(process.env.REACT_APP_GOOGLE_MAPS_KEY);
+import {Container, Col, Row} from "react-bootstrap";
+
+const key = process.env.REACT_APP_GOOGLE_MAPS_KEY;
 
 const AnyReactComponent = ({ text }) => <div>{text}</div>;
  
 class SimpleMap extends Component {
   static defaultProps = {
     center: {
-      lat: 59.95,
-      lng: 30.33
+      lat: 41.6411,
+      lng: -88.4473
     },
-    zoom: 11
+    zoom: 7
   };
  
   render() {
-    return (
-      // Important! Always set the container height explicitly
-      <div style={{ height: '100vh', width: '100%' }}>
+    return (    <Container fluid id="repeatContainer" >
+    <Row id="repeatRow">
+      <Col id="repeatCol">{this.props.side1}</Col>
+      <Col id="repeatCol" >
+      <div style={{ marginRight: "auto", marginLeft: "auto", height: '250px', width: `250px` }}>
         <GoogleMapReact
           bootstrapURLKeys={{ key: key }}
           defaultCenter={this.props.center}
           defaultZoom={this.props.zoom}
         >
           <AnyReactComponent
-            lat={59.955413}
-            lng={30.337844}
-            text="My Marker"
+            lat={41.6411}
+            lng={-88.4473}
+            text="Yorkville"
           />
         </GoogleMapReact>
       </div>
+      </Col>
+    </Row>
+  </Container>
     );
   }
 }
