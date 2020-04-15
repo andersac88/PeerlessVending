@@ -4,7 +4,7 @@ import GoogleMapReact from 'google-map-react';
 import {Container, Col, Row} from "react-bootstrap";
 
 const key = process.env.REACT_APP_GOOGLE_MAPS_KEY;
-
+console.log(key);
 const AnyReactComponent = ({ text }) => <div>{text}</div>;
  
 class SimpleMap extends Component {
