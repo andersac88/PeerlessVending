@@ -10,15 +10,12 @@
 }
 
 #slogan {
-    font-size: 25px;
+    font-size: 20px;
 }
 
-.nav-link {
-    font-size: 30px;
-    margin-right: 1em;
-}
-
-.text-nowrap {
+#contactButton {
+    background-color: rgb(95, 16, 14);
+    border-color: rgb(95, 16, 14);
     border-radius: 0;
     font-size: 30px;
-}
+ }

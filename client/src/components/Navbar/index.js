@@ -18,7 +18,7 @@ function NavBar(props) {
   <Navbar.Collapse id="basic-navbar-nav">
     <Nav className="mr-auto">
    
-      <Button className="text-nowrap" onClick={() => setModalShow(true)} size="lg" variant="danger">Contact Us</Button>
+      <Button className="text-nowrap" id="contactButton" onClick={() => setModalShow(true)} size="lg" >Contact Us</Button>
     </Nav>
   </Navbar.Collapse>
 </Navbar>
