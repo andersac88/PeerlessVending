@@ -7,8 +7,6 @@ import Containers from "./components/Containers"
 import Map from "./components/Map"
 import axios from "axios"
 
-console.log("hi")
-console.log(process.env.REACT_APP_GOOGLE_MAPS_KEY);
 
 class App extends Component {
   state = {
