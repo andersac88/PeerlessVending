@@ -15,7 +15,7 @@ router.post("/contact", (req, res) => {
 //Nodemailer
 let mailOptions = {
   from: req.body.email,
-  to: 'peerlessvendingco@gmail.com',
+  to: 'peerlessvending@gmail.com',
   subject: req.body.name,
   text: "From: " + req.body.name + "E-mail: "+ req.body.email +"Content: " + req.body.message,
   html: "<h1>From: " + req.body.name + "</h1><br><h2>E-mail: " + req.body.email + "</h2><br><h3>Message: " + req.body.message + "</h3>" 
