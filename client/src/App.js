@@ -7,7 +7,6 @@ import Containers from "./components/Containers"
 import Map from "./components/Map"
 import axios from "axios"
 
-
 const top = "Peerless Vending is a family owned vending company based in Yorkville, Illinois that focuses on providing business owners with high quality vending machines for their employees and customers convenience."
 
 const middle = "Our services do not cost the business any money, as we place the machine, service and clean the machine, and fill the machine with the product. We offer a wide variety of candies for our machines at the request of the business or the customers of that business." 
@@ -20,9 +19,6 @@ class App extends Component {
       email: '',
       message: ''
     }
- 
-
-
 
     handleInputChange = event => {
       const {name, value} = event.target;
