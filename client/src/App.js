@@ -7,9 +7,9 @@ import Containers from "./components/Containers"
 import Map from "./components/Map"
 import axios from "axios"
 
-const top = "Peerless Vending is a family owned vending company based in Yorkville, Illinois that focuses on providing business owners with high quality vending machines for the convenience of ther customers and employees."
+const top = "Peerless Vending is a family owned vending company based in Yorkville, Illinois that focuses on providing businesses with high quality vending machines for the convenience of ther customers and employees."
 
-const middle = `Our services are free to business owners. We place, service, clean and fill the machine. 
+const middle = `Our services are free to businesses. We place, service, clean and fill the machine. 
 
 We offer a wide variety of products and are more than willing to meet any of our clients' requests.` 
 
